@@ -75,7 +75,7 @@ const Login = props => {
   return (
     <React.Fragment>
       <MetaTags>
-        <title>Нэвтрэх Үйзэн</title>
+        <title>Нэвтрэх </title>
       </MetaTags>
       <div className="auth-page">
         <Container fluid className="p-0">
@@ -104,7 +104,7 @@ const Login = props => {
                           <AvField
                             name="email"
                             label="Email"
-                            value="admin@uizentech.com"
+                            value="admin@themesbrand.com"
                             className="form-control"
                             placeholder="Enter email"
                             type="email"
@@ -126,7 +126,7 @@ const Login = props => {
                           <div className="mb-3">
                             <AvField
                               name="password"
-                              value="admin"
+                              value="123456"
                               type="password"
                               className="form-control"
                               required
@@ -196,7 +196,7 @@ const Login = props => {
                       </div>
                     </div>
                     <div className="mt-4 mt-md-5 text-center">
-                      <p className="mb-0">© {new Date().getFullYear()} Uizentech <i className="mdi mdi-heart text-danger"></i> </p>
+                      <p className="mb-0">© {new Date().getFullYear()} Uizhen <i className="mdi mdi-heart text-danger"></i></p>
                     </div>
                   </div>
                 </div>
