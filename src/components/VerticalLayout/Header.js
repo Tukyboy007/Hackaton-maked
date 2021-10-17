@@ -1,8 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { useState } from "react";
 import { connect } from "react-redux";
-import { Link, Router } from "react-router-dom";
-import { Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 //import drawer
 import ReactDrawer from 'react-drawer';
@@ -32,7 +31,6 @@ import slack from "../../assets/images/brands/slack.png";
 
 //i18n
 import { withTranslation } from "react-i18next";
-import { withRouter } from "react-router-dom";
 
 // Redux Store
 import {
@@ -41,11 +39,10 @@ import {
   changeSidebarType,
   changelayoutMode
 } from "../../store/actions";
-import Dashboard from '../../pages/Dashboard';
 
 const Header = props => {
   const { onChangeLayoutMode } = props;
-  const [search, setsearch] = useState(false);
+  const [search] = useState(false);
   const [socialDrp, setsocialDrp] = useState(false);
   const [isClick, setClick] = useState(true);
   const [position, setPosition] = useState();

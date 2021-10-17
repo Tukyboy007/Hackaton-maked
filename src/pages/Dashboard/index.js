@@ -1,78 +1,20 @@
 import React from 'react';
 import MetaTags from 'react-meta-tags';
 
-import ReactApexChart from "react-apexcharts"
 
 //import Breadcrumbs
-import Breadcrumbs from "../../components/Common/Breadcrumb";
 
 import {
-    Card,
-    CardBody,
     Col,
     Container,
     Row
 } from "reactstrap";
 
-import CountUp from "react-countup";
 
 /** import Mini Widget data */
 import { WidgetsData } from "../../common/data/dashboard";
-import WalletBalance from './WalletBalance';
-import InvestedOverview from './InvestedOverview';
-import MarketOverview from './MarketOverview';
 import Locations from './Locations';
-import Trading from './Trading';
-import Transactions from './Transactions';
-import RecentActivity from './RecentActivity';
-import NewSlider from './NewSlider';
 
-const options = {
-    chart: {
-        height: 50,
-        type: "line",
-        toolbar: { show: false },
-    },
-    colors: ["#5156be"],
-    stroke: {
-        curve: 'smooth',
-        width: 2,
-    },
-    xaxis: {
-        labels: {
-            show: false
-        },
-        axisTicks: {
-            show: false
-        },
-        axisBorder: {
-            show: false
-        }
-    },
-    yaxis: {
-        labels: {
-            show: false
-        }
-    },
-    tooltip: {
-        fixed: {
-            enabled: false
-        },
-        x: {
-            show: false
-        },
-        y: {
-            title: {
-                formatter: function (seriesName) {
-                    return ''
-                }
-            }
-        },
-        marker: {
-            show: false
-        }
-    }
-};
 
 const Dashboard = () => {
     return (

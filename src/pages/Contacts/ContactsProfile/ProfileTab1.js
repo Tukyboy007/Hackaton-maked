@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Card, CardBody, CardHeader, CardTitle, Col, DropdownItem, DropdownMenu, DropdownToggle, Row, UncontrolledDropdown } from 'reactstrap';
+import { Card, CardBody, CardHeader, CardTitle, Col, Row } from 'reactstrap';
 
 //import images
 import img1 from "../../../assets/images/small/img-3.jpg";

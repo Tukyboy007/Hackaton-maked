@@ -1,12 +1,7 @@
 import PropTypes from "prop-types";
-import React, { useEffect } from "react";
+import React from "react";
 import {
-  changeLayout,
-  changeSidebarTheme,
   changeSidebarType,
-  changeTopbarTheme,
-  changeLayoutWidth,
-  changelayoutMode,
 } from "../../store/actions";
 
 // Layout Related Components
@@ -20,14 +15,8 @@ const Layout = props => {
   const dispatch = useDispatch();
 
   const {
-    isPreloader,
-    layoutWidth,
     leftSideBarType,
-    topbarTheme,
     leftSideBarTheme,
-    layoutMode,
-    layoutType,
-    leftSidebarTypes
   } = useSelector(state => ({
     isPreloader: state.Layout.isPreloader,
     leftSideBarType: state.Layout.leftSideBarType,

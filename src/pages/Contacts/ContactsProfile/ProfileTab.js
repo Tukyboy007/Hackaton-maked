@@ -1,20 +1,16 @@
 import React, { useState } from 'react';
-import { Card, CardBody, CardTitle, Col, DropdownItem, DropdownMenu, DropdownToggle, Nav, NavItem, NavLink, Row, TabContent, TabPane, UncontrolledDropdown } from 'reactstrap';
-import { Link } from 'react-router-dom';
+import { Card, CardBody, Col, Row, TabContent, TabPane } from 'reactstrap';
 
 //import images
 import avatar from "./1.png";
-import avatar1 from "../../../assets/images/users/avatar-1.jpg";
-import avatar3 from "../../../assets/images/users/avatar-3.jpg";
 
-import classnames from "classnames"
 import ProfileTab1 from './ProfileTab1';
 import ProfileTab2 from './Profiletab2';
 import ProfileTab3 from './Profiletab3';
 import './style.css';
 
 const ProfileTab = () => {
-    const [activeTab, toggleTab] = useState("1");
+    const [activeTab] = useState("1");
 
     return (
         <React.Fragment>

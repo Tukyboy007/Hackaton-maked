@@ -3,7 +3,6 @@ import MetaTags from "react-meta-tags"
 import { withRouter, Link } from "react-router-dom"
 import LineApexChart from "../../AllCharts/apex/chartapex"
 import DashedLine from "../../AllCharts/apex/dashedLine"
-import { WidgetsData } from "../../../common/data/dashboard";
 import {
   Card,
   CardBody,
@@ -13,12 +12,6 @@ import {
   Modal,
   ModalHeader,
   ModalBody,
-  Nav,
-  NavItem,
-  NavLink,
-  DropdownItem,
-  UncontrolledDropdown,
-  DropdownToggle,
   CardHeader,
   CardTitle
 } from "reactstrap"
@@ -27,17 +20,13 @@ import paginationFactory, {
   PaginationListStandalone,
   PaginationProvider,
 } from "react-bootstrap-table2-paginator"
-import CountUp from "react-countup";
-import ReactApexChart from "react-apexcharts"
 
 import { AvForm, AvField } from "availity-reactstrap-validation"
-import ToolkitProvider, { Search } from "react-bootstrap-table2-toolkit"
+import ToolkitProvider from "react-bootstrap-table2-toolkit"
 import BootstrapTable from "react-bootstrap-table-next"
 
 import * as images from "../../../assets/images"
 
-//Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb"
 
 import {
   getUsers as onGetUsers,
@@ -45,7 +34,7 @@ import {
   updateUser as onUpdateUser,
   deleteUser as onDeleteUser,
 } from "../../../store/actions"
-import { isEmpty, size, map } from "lodash"
+import { isEmpty } from "lodash"
 
 //redux
 import { useSelector, useDispatch } from "react-redux"
@@ -61,7 +50,7 @@ const ContactsList = props => {
   const [modal, setModal] = useState(false)
   const [isEdit, setIsEdit] = useState(false)
 
-  const { SearchBar } = Search
+
 
   const pageOptions = {
     sizePerPage: 10,
@@ -141,15 +130,8 @@ const ContactsList = props => {
       isDummyField: true,
       editable: false,
       text: "Устгах",
-      formatter: (cellContent, user) => (
+      formatter: ( user) => (
         <div className="d-flex gap-3">
-          {/* <Link className="text-success" to="#">
-            <i
-              className="mdi mdi-pencil font-size-18"
-              id="edittooltip"
-              onClick={() => handleUserClick(user)}
-            ></i>
-          </Link> */}
           <Link className="text-danger" to="#">
             <i
               className="mdi mdi-delete font-size-18"
@@ -199,6 +181,7 @@ const ContactsList = props => {
 
     toggle()
   }
+  handleUserClick()
 
   const handleDeleteUser = user => {
     dispatch(onDeleteUser(user))
@@ -235,11 +218,11 @@ const ContactsList = props => {
     }
     toggle()
   }
-  const handleUserClicks = () => {
-    setUserList("")
-    setIsEdit(false)
-    toggle()
-  }
+  // const handleUserClicks = () => {
+  //   setUserList("")
+  //   setIsEdit(false)
+  //   toggle()
+  // }
 
   return (
     <React.Fragment>

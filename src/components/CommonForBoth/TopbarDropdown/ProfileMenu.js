@@ -22,6 +22,7 @@ const ProfileMenu = props => {
 
   const [username, setusername] = useState("Admin");
 
+  console.log(username);
   useEffect(() => {
     if (localStorage.getItem("authUser")) {
       if (process.env.REACT_APP_DEFAULTAUTH === "firebase") {

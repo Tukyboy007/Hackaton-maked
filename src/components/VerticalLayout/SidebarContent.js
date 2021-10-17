@@ -1,11 +1,9 @@
-import PropTypes from "prop-types"
 import React, { useEffect, useRef, useCallback } from "react"
 
 //Import Icons
 import FeatherIcon from "feather-icons-react";
 
 //Import images
-import giftBox from "../../assets/images/giftbox.png"
 
 // //Import Scrollbar
 import SimpleBar from "simplebar-react"
@@ -181,7 +179,7 @@ const SidebarContent = props => {
               </Link>
               <ul className="sub-menu">
                 <li>
-                <Link to="/apps-chat">
+                <Link to="/#">
                     {props.t("Мессенжер")}
                   </Link>
                 </li>
