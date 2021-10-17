@@ -157,7 +157,7 @@ const ProfileTab1 = () => {
                                             </li> */}
                                             <li className="list-inline-item me-3">
                                                 <Link to="#" className="text-muted">
-                                                    <i className="bx bx-comment-dots align-middle text-muted me-1"></i> 08 Comments
+                                                    <i className="bx bx-comment-dots align-middle text-muted me-1"></i> 08 Сэтгэгдэл
                                                 </Link>
                                             </li>
                                         </ul>
@@ -207,7 +207,7 @@ const ProfileTab1 = () => {
                                             </li> */}
                                             <li className="list-inline-item me-3">
                                                 <Link to="#" className="text-muted">
-                                                    <i className="bx bx-comment-dots align-middle text-muted me-1"></i> 08 Comments
+                                                    <i className="bx bx-comment-dots align-middle text-muted me-1"></i> 08 Сэтгэгдэл
                                                 </Link>
                                             </li>
                                         </ul>

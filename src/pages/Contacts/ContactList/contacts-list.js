@@ -27,6 +27,7 @@ import BootstrapTable from "react-bootstrap-table-next"
 
 import * as images from "../../../assets/images"
 
+//Import Breadcrumb
 
 import {
   getUsers as onGetUsers,
@@ -49,7 +50,6 @@ const ContactsList = props => {
   const [userList, setUserList] = useState([])
   const [modal, setModal] = useState(false)
   const [isEdit, setIsEdit] = useState(false)
-
 
 
   const pageOptions = {
@@ -130,8 +130,9 @@ const ContactsList = props => {
       isDummyField: true,
       editable: false,
       text: "Устгах",
-      formatter: ( user) => (
+      formatter: (cellContent, user) => (
         <div className="d-flex gap-3">
+
           <Link className="text-danger" to="#">
             <i
               className="mdi mdi-delete font-size-18"
@@ -166,22 +167,21 @@ const ContactsList = props => {
     }
   }
 
-  const handleUserClick = arg => {
-    const user = arg
+  // const handleUserClick = arg => {
+  //   const user = arg
 
-    setUserList({
-      id: user.id,
-      name: user.name,
-      designation: user.designation,
-      email: user.email,
-      tags: user.tags,
-      projects: user.projects,
-    })
-    setIsEdit(true)
+  //   setUserList({
+  //     id: user.id,
+  //     name: user.name,
+  //     designation: user.designation,
+  //     email: user.email,
+  //     tags: user.tags,
+  //     projects: user.projects,
+  //   })
+  //   setIsEdit(true)
 
-    toggle()
-  }
-  handleUserClick()
+  //   toggle()
+  // }
 
   const handleDeleteUser = user => {
     dispatch(onDeleteUser(user))
@@ -228,7 +228,7 @@ const ContactsList = props => {
     <React.Fragment>
       <div className="page-content">
         <MetaTags>
-          <title>User List | Minia - React Admin & Dashboard Template</title>
+          <title>Uizhen</title>
         </MetaTags>
         <Container fluid>
           {/* Render Breadcrumbs */}

@@ -75,7 +75,7 @@ const Login = props => {
   return (
     <React.Fragment>
       <MetaTags>
-        <title>Login | Minia - React Admin & Dashboard Template</title>
+        <title>Нэвтрэх Үйзэн</title>
       </MetaTags>
       <div className="auth-page">
         <Container fluid className="p-0">
@@ -86,13 +86,12 @@ const Login = props => {
                   <div className="d-flex flex-column h-100">
                     <div className="mb-4 mb-md-5 text-center">
                       <Link to="/dashboard" className="d-block auth-logo">
-                        <img src={logo} alt="" height="28" /> <span className="logo-txt">Minia</span>
+                        <img src={logo} alt="" height="28" /> <span className="logo-txt">Uizhen</span>
                       </Link>
                     </div>
                     <div className="auth-content my-auto">
                       <div className="text-center">
-                        <h5 className="mb-0">Welcome Back !</h5>
-                        <p className="text-muted mt-2">Sign in to continue to Minia.</p>
+                        <h5 className="mb-0">Тавтай морилно уу !</h5>
                       </div>
                       <AvForm
                         className="custom-form mt-4 pt-2"
@@ -105,7 +104,7 @@ const Login = props => {
                           <AvField
                             name="email"
                             label="Email"
-                            value="admin@themesbrand.com"
+                            value="admin@uizentech.com"
                             className="form-control"
                             placeholder="Enter email"
                             type="email"
@@ -115,11 +114,11 @@ const Login = props => {
                         <div className="mb-3">
                           <div className="d-flex align-items-start">
                             <div className="flex-grow-1">
-                              <label className="form-label">Password</label>
+                              <label className="form-label">Нууц үг</label>
                             </div>
                             <div className="flex-shrink-0">
                               <div className="">
-                                <Link to="/auth-recoverpw" className="text-muted">Forgot password?</Link>
+                                <Link to="/auth-recoverpw" className="text-muted">Нууц үгээ мартсан уу?</Link>
                               </div>
                             </div>
                           </div>
@@ -127,7 +126,7 @@ const Login = props => {
                           <div className="mb-3">
                             <AvField
                               name="password"
-                              value="123456"
+                              value="admin"
                               type="password"
                               className="form-control"
                               required
@@ -140,19 +139,19 @@ const Login = props => {
                             <div className="form-check">
                               <input className="form-check-input" type="checkbox" id="remember-check" />
                               <label className="form-check-label" htmlFor="remember-check">
-                                Remember me
+                                Нууц үг сануулах
                               </label>
                             </div>
                           </div>
 
                         </div>
                         <div className="mb-3">
-                          <button className="btn btn-primary w-100 waves-effect waves-light" type="submit">Log In</button>
+                          <button className="btn btn-primary w-100 waves-effect waves-light" type="submit">Нэвтрэх</button>
                         </div>
                       </AvForm>
 
                       <div className="mt-4 text-center">
-                        <h5 className="font-size-14 mb-3">Sign in with</h5>
+                        <h5 className="font-size-14 mb-3">Сошиал хаягуудаар нэвтрэх</h5>
 
                         <ul className="list-inline">
                           <li className="list-inline-item">
@@ -192,12 +191,12 @@ const Login = props => {
                       </div>
 
                       <div className="mt-5 text-center">
-                        <p className="text-muted mb-0">Don't have an account ? <Link to="/register"
-                          className="text-primary fw-semibold"> Signup now </Link> </p>
+                        <p className="text-muted mb-0">Та бүртгэл үүсгэх үү? <Link to="/register"
+                          className="text-primary fw-semibold"> Бүртгэл үүсгэх </Link> </p>
                       </div>
                     </div>
                     <div className="mt-4 mt-md-5 text-center">
-                      <p className="mb-0">© {new Date().getFullYear()} Minia . Crafted with <i className="mdi mdi-heart text-danger"></i> by Themesbrand</p>
+                      <p className="mb-0">© {new Date().getFullYear()} Uizentech <i className="mdi mdi-heart text-danger"></i> </p>
                     </div>
                   </div>
                 </div>

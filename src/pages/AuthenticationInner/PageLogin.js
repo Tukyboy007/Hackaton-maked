@@ -9,7 +9,7 @@ function PageLogin(props) {
     return (
         <React.Fragment>
             <MetaTags>
-                <title>Login | Minia - React Admin & Dashboard Template</title>
+                <title>Нэвтрэх Үйзэн</title>
             </MetaTags>
             <div className="auth-page">
                 <div className="container-fluid p-0">
@@ -20,7 +20,7 @@ function PageLogin(props) {
                                     <div className="d-flex flex-column h-100">
                                         <div className="mb-4 mb-md-5 text-center">
                                             <Link to="/dashboard" className="d-block auth-logo">
-                                                <img src={logo} alt="" height="28" /> <span className="logo-txt">Minia</span>
+                                                <img src={logo} alt="" height="28" /> <span className="logo-txt">Үйзэн</span>
                                             </Link>
                                         </div>
                                         <div className="auth-content my-auto">

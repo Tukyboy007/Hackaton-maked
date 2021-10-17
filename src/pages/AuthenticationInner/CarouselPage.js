@@ -5,31 +5,27 @@ import {
     CarouselIndicators,
 } from 'reactstrap';
 
-import img1 from "../../assets/images/users/avatar-1.jpg";
-import img2 from "../../assets/images/users/avatar-2.jpg";
-import img3 from "../../assets/images/users/avatar-3.jpg";
 
 const items = [
     {
-        id: 1,
-        img: img1,
-        name: "Richard Drews",
-        designation: "Web Designer",
-        description: "I feel confident imposing change on myself. It's a lot more progressing fun than looking back. That's why I ultricies enim at malesuada nibh diam on tortor neaded to throw curve balls."
+        // id: 1,
+        // name: "Richard Drews",
+        // designation: "Team ",
+        // description: "I feel confident imposing change on myself. It's a lot more progressing fun than looking back. That's why I ultricies enim at malesuada nibh diam on tortor neaded to throw curve balls."
     },
     {
-        id: 2,
-        img: img2,
-        name: "Rosanna French",
-        designation: "Web Developer",
-        description: "Our task must be to free ourselves by widening our circle of compassion to embrace all living   creatures and the whole of quis consectetur nunc sit amet semper justo. nature and its beauty."
+        // id: 2,
+        // img: img2,
+        // name: "Rosanna French",
+        // designation: "Web Developer",
+        // description: "Our task must be to free ourselves by widening our circle of compassion to embrace all living   creatures and the whole of quis consectetur nunc sit amet semper justo. nature and its beauty."
     },
     {
-        id: 3,
-        img: img3,
-        name: "Ilse R. Eaton",
-        designation: "Manager",
-        description: "I've learned that people will forget what you said, people will forget what you did,but people will never forget how donec in efficitur lectus, nec lobortis metus you made them feel."
+        // id: 3,
+        // img: img3,
+        // name: "Ilse R. Eaton",
+        // designation: "Manager",
+        // description: "I've learned that people will forget what you said, people will forget what you did,but people will never forget how donec in efficitur lectus, nec lobortis metus you made them feel."
     }
 ];
 
@@ -57,21 +53,20 @@ const CarouselPage = (props) => {
     const slides = items.map((item) => {
         return (
             <CarouselItem
-                tag="div"
-                key={item.id}
+                // tag="div"
+                // key={item.id}
                 onExiting={() => setAnimating(true)}
                 onExited={() => setAnimating(false)}
             >
                 <div className="carousel-item active">
                     <div className="testi-contain text-white">
-                        <i className="bx bxs-quote-alt-left text-success display-6"></i>
 
-                        <h4 className="mt-4 fw-medium lh-base text-white">“{item.description}”
-                        </h4>
+                        {/* <h4 className="mt-4 fw-medium lh-base text-white">“{item.description}” */}
+                        {/* </h4> */}
                         <div className="mt-4 pt-3 pb-5">
                             <div className="d-flex align-items-start">
                                 <div className="flex-shrink-0">
-                                    <img src={item.img} className="avatar-md img-fluid rounded-circle" alt="..." />
+                                    {/* <img src={item.img} className="avatar-md img-fluid rounded-circle" alt="..." /> */}
                                 </div>
                                 <div className="flex-grow-1 ms-3 mb-4">
                                     <h5 className="font-size-18 text-white">{item.name}

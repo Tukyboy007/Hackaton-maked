@@ -18,7 +18,7 @@ const ContactsProfile = props => {
     <React.Fragment>
       <div className="page-content">
         <MetaTags>
-          <title>Profile | Minia - React Admin & Dashboard Template</title>
+          <title>Uizhen</title>
         </MetaTags>
         <Container fluid>
           {/* Render Breadcrumbs */}
